@@ -1,6 +1,5 @@
 
 
-
 // comp options
 function getCompOptions(){
     const comp = Math.random();
@@ -42,8 +41,6 @@ pBatu.addEventListener('click', function(){
     console.log('player : ' + playerOptions);
     console.log('hasil : ' + result);
     
-    
-    
     const info = document.querySelector('.info');
     info.innerHTML = result;
 });
@@ -58,8 +55,8 @@ pKertas.addEventListener('click', function(){
     console.log('player : ' + playerOptions);
     console.log('hasil : ' + result);
 
-    const imgComputer = document.querySelector('.image-comp');
-    imgComputer.setAttribute('src', 'assets/' + compOptions + '.png');
+    // const imgComputer = document.querySelector('.kertas-2');
+    // imgComputer.style.backgroundColor = 'grey';
 
     const info = document.querySelector('.info');
     info.innerHTML = result;
@@ -75,12 +72,15 @@ pGunting.addEventListener('click', function(){
     console.log('player : ' + playerOptions);
     console.log('hasil : ' + result);
 
-    const imgComputer = document.querySelector('.image-comp');
-    imgComputer.setAttribute('src', 'assets/' + compOptions + '.png');
+    // const imgComputer = document.querySelector('.gunting-2');
+    // imgComputer.style.backgroundColor = 'grey';
 
     const info = document.querySelector('.info');
     info.innerHTML = result;
 });
+
+
+
 
 
 
