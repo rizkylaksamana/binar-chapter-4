@@ -1,3 +1,6 @@
+
+
+
 // comp options
 function getCompOptions(){
     const comp = Math.random();
@@ -8,10 +11,25 @@ function getCompOptions(){
 }
 
 function getResult(comp, player) {
-    if( player == comp ) return 'DRAW';
-    if ( player == 'batu') return ( comp == 'gunting' ) ? 'PLAYER 1 WIN' : 'COM WIN';
-    if ( player == 'gunting') return ( comp == 'kertas' ) ? 'PLAYER 1 WIN' : 'COM WIN';
-    if ( player == 'kertas') return ( comp == 'batu' ) ? 'PLAYER 1 WIN' : 'COM WIN';
+    let info = document.querySelector('.info')
+    let win = info.innerHTML = 'PLAYER 1 WIN'
+    let comWin = info.innerHTML = 'COM WIN'
+    let draw = info.innerHTML = 'DRAW'
+
+    info.style.backgroundColor = "#4C9654"
+    info.style.width = "50%"
+    info.style.height = "200px"
+    info.style.transform = "rotate(-28.87deg)"
+    info.style.borderRadius = '10px'
+    info.style.fontWeight = '700'
+    info.style.fontSize = '38px'
+    info.style.color = 'white'
+
+    if( player == comp ) return draw;
+    if ( player == 'batu') return ( comp == 'gunting' ) ? win : comWin;
+    if ( player == 'gunting') return ( comp == 'kertas' ) ? win : comWin;
+    if ( player == 'kertas') return ( comp == 'batu' ) ? win : comWin;
+
 }
 
 // pilih batu
@@ -23,10 +41,9 @@ pBatu.addEventListener('click', function(){
     console.log('comp : ' + compOptions);
     console.log('player : ' + playerOptions);
     console.log('hasil : ' + result);
-
-    const imgComputer = document.querySelector('.image-comp');
-    imgComputer.setAttribute('src', 'assets/' + compOptions + '.png');
-
+    
+    
+    
     const info = document.querySelector('.info');
     info.innerHTML = result;
 });
@@ -64,3 +81,11 @@ pGunting.addEventListener('click', function(){
     const info = document.querySelector('.info');
     info.innerHTML = result;
 });
+
+
+
+// refresh
+const refresh = document.querySelector('#refresh');
+refresh.addEventListener('click', function(){
+    location.reload();
+})

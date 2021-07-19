@@ -1,18 +1,20 @@
 * {
+  background-color: #9c835f;
+  width: 100%;
+  height: auto;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #9c835f;
-}
-
-header .container {
-  height: auto;
 }
 
 .navbar {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
 }
 
 svg {
@@ -47,6 +49,8 @@ img {
 .image-player,
 .image-comp {
   /* position: relative; */
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +59,7 @@ img {
 
 .col h1 {
   font-weight: 700;
+  text-align: center;
 }
 
 .info h1 {
@@ -68,6 +73,11 @@ img {
   height: 71px;
   /* position: absolute; */
   bottom: 0;
+  cursor: pointer;
+}
+
+.refresh {
+  text-align: center;
 }
 
 .batu,
@@ -81,6 +91,7 @@ img {
 .kertas:hover,
 .gunting:hover,
 .active {
-  background: #c4c4c4;
+  background-color: #c4c4c4;
   border-radius: 20px;
+  transform: scale(0.9);
 }

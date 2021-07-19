@@ -22,29 +22,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid justify-content-start">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-caret-left"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
-          />
-        </svg>
-        <img src="assets/logo-1.png" class="logo" />
-        <h1>ROCK PAPER SCISSORS</h1>
-      </div>
-    </nav>
-    <!-- end navbar -->
-
-    <!-- Player Area -->
     <div id="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid justify-content-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+            />
+          </svg>
+          <img src="assets/logo-1.png" class="logo" />
+          <h1>ROCK PAPER SCISSORS</h1>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- Player Area -->
+
       <div class="row align-items-center">
         <div class="col player">
           <h1>Player 1</h1>
@@ -60,21 +60,23 @@
         <!-- info -->
         <div class="col info">
           <h1>VS</h1>
-          <img id="refresh" src="assets/refresh.png" alt="" />
-          <!-- <h1>refresh</h1> -->
         </div>
 
         <!-- Comp Area -->
         <div class="col comp">
           <h1>COMP</h1>
           <div class="image-comp">
-            <img src="assets/batu.png" class="batu" />
+            <img src="assets/batu.png" class="batu-2" />
 
-            <img src="assets/kertas.png" class="kertas" />
+            <img src="assets/kertas.png" class="kertas-2" />
 
-            <img src="assets/gunting.png" class="gunting" />
+            <img src="assets/gunting.png" class="gunting-2" />
           </div>
         </div>
+      </div>
+      <!-- refresh -->
+      <div class="refresh">
+        <img id="refresh" src="assets/refresh.png" alt="" />
       </div>
     </div>
     <script src="app.js"></script>
